@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+    <style>
+   body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: 'Quicksand', sans-serif;
+    }
+
+    .card {
+      width: 300px;
+      background-color: #fff;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+      text-align: center;
+      position: relative;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.03);
+      cursor: pointer;
+    }
+
+    .card-header {
+      height: 120px;
+      background: url(ant.jpg) no-repeat center/cover;
+      filter: brightness(0.9);
+    }
+
+    .avatar {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 5px solid white;
+      position: absolute;
+      top: 70px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 2;
+    }
+
+    .card-body {
+      padding: 60px 20px 20px;
+    }
+
+    h2 {
+      margin: 10px 0 5px;
+      font-size: 22px;
+      color: #333;
+    }
+
+    p.title {
+      font-size: 14px;
+      color: gray;
+      margin-bottom: 15px;
+    }
+
+    .stats {
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 15px;
+    }
+
+    .stats div {
+      color: #555;
+    }
+
+    .stats div span {
+      display: block;
+      font-weight: bold;
+      font-size: 18px;
+      color: #0077ff;
+    }
+
+    .btn-follow {
+      background: #ffce00;
+      border: none;
+      padding: 10px 30px;
+      border-radius: 25px;
+      font-weight: italic;
+      text-transform: uppercase;
+      transition: background 0.3s ease;
+    }
+
+    .btn-follow:hover {
+      background: #f6b400;
+      cursor: pointer;
+    }
+
+    .bio {
+      font-size: 13px;
+      color: #444;
+      padding: 0 10px;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <div class="card-header"></div>
+        <img src="images.png" alt="Avatar" class="avatar">
+        <div class="card-body">
+          <h2>Afnan Jani</h2>
+          <p class="title">Ant Collector</p>
+          <div class="stats">
+            <div><span>12</span>Followers</div>
+            <div><span>1000</span>Following</div>
+          </div>
+          <button class="btn-follow">Follow</button>
+          <p class="bio">Afnan has collected ants since they were six years old and now has many dozen ants but none in their pants.</p>
+        </div>
+      </div>
+</body>
+
+</html>
